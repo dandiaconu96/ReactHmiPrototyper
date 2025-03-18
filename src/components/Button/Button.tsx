@@ -1,12 +1,12 @@
-import { Wrapper } from './Button.styles'
+import Wrapper from "./Button.styles";
 
 interface ButtonProps {
   /** The button label */
-  label: string
+  label: string;
   /** Specify if the button can be clicked */
-  disabled?: boolean
+  disabled?: boolean;
   /** Custom click handler */
-  onClick?: () => void
+  onClick?: () => void;
 }
 
 export const Button = ({ label, disabled, onClick }: ButtonProps) => {
@@ -14,5 +14,5 @@ export const Button = ({ label, disabled, onClick }: ButtonProps) => {
     <Wrapper disabled={disabled} onClick={onClick}>
       {label}
     </Wrapper>
-  )
-}
+  );
+};

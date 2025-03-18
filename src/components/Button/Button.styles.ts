@@ -1,12 +1,12 @@
-import styled from 'styled-components'
+import styled from "styled-components";
 
-export const Wrapper = styled.button`
+const Wrapper = styled.button`
   margin: 0;
   padding: 0;
 
   font: inherit;
 
-  color: ${p => p.theme.colors.default};
+  color: ${(p) => p.theme.colors.default};
   background: none;
   border: none;
 
@@ -24,7 +24,9 @@ export const Wrapper = styled.button`
 
   &:active {
     &:not(:disabled) {
-      color: ${p => p.theme.colors.primary};
+      color: ${(p) => p.theme.colors.primary};
     }
   }
-`
+`;
+
+export default Wrapper;

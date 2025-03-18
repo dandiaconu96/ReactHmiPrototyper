@@ -1,0 +1,22 @@
+@import 'fonts';
+@import 'icons';
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body,
+#root {
+  height: 100%;
+  background: #222;
+}
+
+html {
+  font-family: 'Roboto Condensed', serif;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 1.3;
+}

@@ -1,25 +1,13 @@
 import type { Meta, StoryObj } from "@storybook/react";
-import { ThemeProvider } from "styled-components";
-import { THEME } from "../../shared/theme";
 import { Button } from "./Button";
-import Display14 from "../../displays/Display14/Display14";
 
-const meta = {
+const meta: Meta<typeof Button> = {
+  title: "Components/Button",
   component: Button,
-  decorators: [
-    (Story) => (
-      <ThemeProvider theme={THEME}>
-        <Display14>
-          <Story />
-        </Display14>
-      </ThemeProvider>
-    ),
-  ],
-} satisfies Meta<typeof Button>;
-
+};
 export default meta;
 
-type Story = StoryObj<typeof meta>;
+type Story = StoryObj<typeof Button>;
 
 export const Default: Story = {
   args: {
